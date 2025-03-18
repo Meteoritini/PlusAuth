@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "plusauth",
+  "version": "${version}",
+  "name": "PlusAuth",
+  "description": "Testing",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/plusauth/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "ch.meteoritini.plusauth.Plusauth"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "mixins": [
+    "plusauth.mixins.json"
+  ]
+}
